@@ -1,0 +1,72 @@
+body {
+  color: #fff;
+}
+
+button {
+  background-color: #3882f6;
+  color: inherit;
+  border-radius: 5px;
+  border: none;
+  padding: 4px 22px;
+}
+
+.header,
+.hero,
+.footer {
+  background-color: #1f2937;
+}
+
+/* Header -------------------------- */
+.header .logo {
+  font-size: 24px;
+}
+
+.header a {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* Hero -------------------------- */
+.hero .container .title {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.hero .container .text {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+/* Info -------------------------- */
+.info .title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+/* Quote -------------------------- */
+.quote {
+  background-color: #e5e7eb;
+}
+
+.quote .text {
+  font-size: 36px;
+  font-weight: light;
+  font-style: italic;
+  color: #1f2937;
+}
+
+/* Call to Action -------------------------- */
+.cta {
+  background-color: #3882f6;
+}
+
+.cta button {
+  border: 1px solid;
+}
+
+/* Footer -------------------------- */
+.footer {
+
+}
