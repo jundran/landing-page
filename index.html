@@ -8,65 +8,89 @@
   <title>Landing Page</title>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">Header Logo</div>
+  <!-- Wrapper is a class but immediate divs have IDs to override wrapper CSS -->
+<div class="wrapper">
+  
+  <div id="header">
+    <div class="container">
+      <div class="logo">Header Logo</div>
       <ul>
         <a href="#">header link one</a>
         <a href="#">header link two</a>
         <a href="#">header link three</a>
       </ul>
+    </div>
   </div>
 
-  <div class="hero">
+  <div id="hero">
     <div class="container">
-      <div class="title">This website is awesome</div>
+      <div class="left">
+        <div class="title">This website is awesome</div>
+        <div class="text">
+          This website has some subext that goes here under the main title. It's smaller
+          font and the colour is lower contrast.  
+        </div>
+        <button>Sign up</button>
+      </div>
+      <img src="https://via.placeholder.com/400x200.png?text=landing+page" alt="placeholder">
+    </div>
+  </div>
+
+  <div id="info">
+    <div class="container column">
+      <div class="title">Some random information.</div>
+      <div class="card-container">
+        <div class="card">
+          <img src="https://via.placeholder.com/150x150.png?text=landing+page" alt="placeholder">
+          This is some subtext under and illustration or image
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150x150.png?text=landing+page" alt="placeholder">
+          This is some subtext under and illustration or image
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150x150.png?text=landing+page" alt="placeholder">
+          This is some subtext under and illustration or image
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/150x150.png?text=landing+page" alt="placeholder">
+          This is some subtext under and illustration or image
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="quote">
+    <div class="container column">
       <div class="text">
-        This website has some subext that goes here under the main title. It's smaller
-        font and the colour is lower contrast.  
+        <em>
+          This is an inspiring quote, or a testimonial from a customer. 
+          Maybe it's just filling up space, or maybe people will actually 
+          read it. Who knows? All I know is that it looks nice.
+        </em> 
+      </div>
+      <div class="author">-Thor, God of Thunder</div>
+    </div>
+  </div>
+
+  <div id="cta">
+    <div class="container">
+      <div class="left">
+        <div class="title">Call to action! It's time!</div>
+        <div class="text">
+          Sign up for out production by clicking that button right over there!
+        </div>
       </div>
       <button>Sign up</button>
     </div>
-    <img src="https://via.placeholder.com/350x150.png?text=landing+page" alt="placeholder">
   </div>
 
-  <div class="info">
-    <div class="title">Some random information.</div>
-    <div class="card">
-      <img src="https://via.placeholder.com/50x50.png?text=landing+page" alt="placeholder">
-      This is some subtext under and illustration or image
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/50x50.png?text=landing+page" alt="placeholder">
-      This is some subtext under and illustration or image
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/50x50.png?text=landing+page" alt="placeholder">
-      This is some subtext under and illustration or image
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/50x50.png?text=landing+page" alt="placeholder">
-      This is some subtext under and illustration or image
-    </div>
-  </div>
-
-  <div class="quote">
-    <div class="text">
-      This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up 
-      space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
-    </div>
-    <div class="author">-Thor, God of Thunder</div>
-  </div>
-  
-  <div class="cta">
+  <div id="footer">
     <div class="container">
-      <span class="title">Call to action! It's time!</span>
-      <span class="text">
-        Sign up for out production by clicking that button right over there!
-      </span>
+      Copyright © The Odin Project 2022
     </div>
-    <button>Sign up</button>
   </div>
 
-  <div class="footer">Copyright © The Odin Project 2022</div>
+</div> <!-- Close wrapper -->
 </body>
 </html>

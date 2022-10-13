@@ -1,5 +1,23 @@
 body {
+  background-color: lightslategray;
   color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: roboto;
+}
+
+.wrapper {
+  max-width: 1140px;
+  background-color: #eee;
+}
+
+/* 
+  Top level divs in wrapper should
+  override vertical padding only
+*/
+.wrapper > div {
+  padding: 8px 125px;
 }
 
 button {
@@ -8,65 +26,150 @@ button {
   border-radius: 5px;
   border: none;
   padding: 4px 22px;
+  margin: 16px 0;
 }
 
-.header,
-.hero,
-.footer {
+/* 
+  flex: 0 1 auto 
+  Flex items will shrink until the 
+  horizontal scroll bar appears.
+*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+#header,
+#hero,
+#footer {
   background-color: #1f2937;
 }
 
 /* Header -------------------------- */
-.header .logo {
+#header .logo {
   font-size: 24px;
 }
 
-.header a {
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#header a {
+  margin-left: 16px;
   font-size: 18px;
   color: #e5e7eb;
+  text-decoration: none;
 }
 
 /* Hero -------------------------- */
-.hero .container .title {
+#hero {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+#hero .left .title {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
 }
 
-.hero .container .text {
+#hero .left .text {
   font-size: 18px;
   color: #e5e7eb;
 }
 
 /* Info -------------------------- */
-.info .title {
+#info {
+  padding-top: 32px;
+  padding-bottom: 96px;
+}
+
+#info .container {
+  color: #1f2937;
+}
+
+#info .title {
   font-size: 36px;
   font-weight: 900;
-  color: #1f2937;
+}
+
+#info .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 300;
+  gap: 64px;
+}
+
+#info .card {
+  width: 150px;
+  text-align: center;
+}
+
+#info .card img {
+  border: 1px solid #3882f6;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
 /* Quote -------------------------- */
-.quote {
+#quote {
+  padding-top: 80px;
+  padding-bottom: 64px;
   background-color: #e5e7eb;
 }
 
-.quote .text {
-  font-size: 36px;
-  font-weight: light;
-  font-style: italic;
+#quote .text,
+#quote .author {
+  width: 87%;
   color: #1f2937;
 }
 
-/* Call to Action -------------------------- */
-.cta {
-  background-color: #3882f6;
+#quote .text {
+  font-size: 36px;
+  font-weight: 200;
+  text-align: justify;
 }
 
-.cta button {
+#quote .author {
+  font-weight: 500;
+  text-align: end;
+}
+
+/* Call to Action -------------------------- */
+#cta {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+#cta .container {
+  background-color: #3882f6;
+  border-radius: 5px;
+  padding: 16px 64px;
+}
+
+#cta .title {
+  font-weight: bold;
+}
+
+#cta button {
   border: 1px solid;
+  flex-shrink: 0;
 }
 
 /* Footer -------------------------- */
-.footer {
+#footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 
+#footer .container {
+  justify-content: center;
 }
