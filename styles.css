@@ -1,15 +1,14 @@
 body {
   background-color: lightslategray;
-  color: #fff;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+  color: #eee;
   font-family: roboto;
+  margin: 0;
 }
 
 .wrapper {
   max-width: 1140px;
   background-color: #eee;
+  margin: auto;
 }
 
 /* 
