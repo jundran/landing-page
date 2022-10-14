@@ -1,22 +1,8 @@
 body {
-  background-color: lightslategray;
+  background-color: #eee;
   color: #eee;
   font-family: roboto;
   margin: 0;
-}
-
-.wrapper {
-  max-width: 1140px;
-  background-color: #eee;
-  margin: auto;
-}
-
-/* 
-  Top level divs in wrapper should
-  override vertical padding only
-*/
-.wrapper > div {
-  padding: 8px 125px;
 }
 
 button {
@@ -28,19 +14,18 @@ button {
   margin: 16px 0;
 }
 
-/* 
-  flex: 0 1 auto 
-  Flex items will shrink until the 
-  horizontal scroll bar appears.
-*/
 .container {
+  padding: 8px 16px;
+  margin: 0 auto;
+
+  max-width: 890px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
 }
 
-.column {
+.container.column {
   flex-direction: column;
 }
 
@@ -55,16 +40,21 @@ button {
   font-size: 24px;
 }
 
-ul {
+#header .links {
   margin: 0;
   padding: 0;
 }
 
-#header a {
-  margin-left: 16px;
+#header .links li {
+  display: inline;
   font-size: 18px;
-  color: #e5e7eb;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+#header .links li a {
   text-decoration: none;
+  color: #e5e7eb;
 }
 
 /* Hero -------------------------- */
@@ -73,13 +63,19 @@ ul {
   padding-bottom: 64px;
 }
 
-#hero .left .title {
+@media(max-width: 700px) {
+  #hero .container {
+    flex-direction: column;
+  }
+}
+
+#hero .title {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
 }
 
-#hero .left .text {
+#hero .text {
   font-size: 18px;
   color: #e5e7eb;
 }
@@ -144,14 +140,21 @@ ul {
 
 /* Call to Action -------------------------- */
 #cta {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 64px 16px 64px 16px;
 }
 
 #cta .container {
   background-color: #3882f6;
   border-radius: 5px;
+  box-sizing: border-box;
   padding: 16px 64px;
+}
+
+@media(max-width: 500px) {
+  #cta .container {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
 
 #cta .title {
