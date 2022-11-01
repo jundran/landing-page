@@ -126,8 +126,7 @@ button {
   /* Without this, parent div is a few pixels too high */
   display: block;
   max-width: 100%;
-  /* Prevent image being square and extending through 
-  parent padding if parent paddding is too small */
+  /* Prevent image being square and extending through parent padding if parent paddding is too small */
   border-radius: inherit;
 }
 
